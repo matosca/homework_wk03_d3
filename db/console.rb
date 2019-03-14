@@ -12,10 +12,10 @@ artist1.save()
 artist2 = Artist.new ( {'name' => 'Brain May'})
 artist2.save()
 
-artist1.name = "Freddy Mercury"
-artist1.update()
-
-artist2.delete()
+# artist1.name = "Freddy Mercury"
+# artist1.update()
+#
+# artist2.delete()
 
 album1 = Album.new({ 'title' => 'QueenII', 'genre' => 'rock', 'artist_id' => artist1.id })
 album1.save()
@@ -23,16 +23,16 @@ album1.save()
 album2 = Album.new({ 'title' => 'Innuendo', 'genre' => 'rock', 'artist_id' => artist1.id })
 album2.save()
 
-album1.title = "Mr. Bad Guy"
-album1.update()
-
-album2.delete()
+# album1.title = "Mr. Bad Guy"
+# album1.update()
+#
+# album2.delete()
 
 Album.all()
 Artist.all()
 
-Artist.find_by_id(artist1)
-Album.find_by_id(album1)
+# Artist.find_by_id(artist1)
+# Album.find_by_id(album1)
 
 
 binding.pry
